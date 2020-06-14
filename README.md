@@ -1,5 +1,3 @@
-# Spark-Essentials
-Different spark (2.4) codes 
 
 Objects:
 
@@ -14,6 +12,10 @@ read-avro: Explains how to configure different compression codecs for avro files
           snappy
 
           )
+          
+          Similarly for parquet: snappy, gzip, and lzo).
+                                spark.sql.parquet.compression.codec
+                              
 
           Remember all codecs are in small case. Upper case will error out
           Make sure you add Maven repository dependencies.
